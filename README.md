@@ -10,7 +10,7 @@ automatically run `/reload` when game paused.
 
 ### Uninstall
 
-This datapack **must** be uninstall before releasing your CTM Map(Custom Map).
+This datapack **must** be uninstalled before releasing your CTM Map(Custom Map).
 1. Run `/function auto_reload:uninstall`
 1. Remove `auto_reload` from the `datapacks` folder.
 
