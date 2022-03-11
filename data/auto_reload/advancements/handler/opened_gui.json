@@ -1,0 +1,75 @@
+{
+  "criteria": {
+    "block": {
+      "trigger": "item_used_on_block",
+      "conditions": {
+        "location": {
+          "block": {
+            "blocks": [
+              "command_block",
+              "chain_command_block",
+              "repeating_command_block",
+              "jigsaw"
+            ]
+          }
+        },
+        "player": [
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "auto_reload.sneak_time": {
+                  "min": 1
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "block_with_sneaking": {
+      "trigger": "item_used_on_block",
+      "conditions": {
+        "location": {
+          "block": {
+            "blocks": [
+              "command_block",
+              "chain_command_block",
+              "repeating_command_block",
+              "jigsaw"
+            ]
+          }
+        },
+        "item": {
+          "items": [
+            "air"
+          ]
+        },
+        "player": [
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "auto_reload.sneak_time": {
+                "min": 1
+              }
+            }
+          }
+        ]
+      }
+    },
+    "entity": {
+      "trigger": "player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "command_block_minecart"
+        }
+      }
+    }
+  },
+  "requirements": [
+    ["block", "block_with_sneaking", "entity"]
+  ]
+}
