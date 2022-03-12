@@ -1,0 +1,25 @@
+{
+  "criteria": {
+    "": {
+      "trigger": "item_used_on_block",
+      "conditions": {
+        "item": {
+          "items": [
+            "writable_book",
+            "written_book"
+          ]
+        },
+        "location": {
+          "block": {
+            "blocks": [
+              "lectern"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "auto_reload:handler/placed_book_on_lectern"
+  }
+}
