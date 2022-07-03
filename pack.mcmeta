@@ -1,6 +1,6 @@
 {
 	"pack": {
-		"pack_format": 9,
-		"description": "Run '/reload' when game paused."
+		"pack_format": 10,
+		"description": ""
 	}
 }
