@@ -4,16 +4,7 @@
       "trigger": "placed_block",
       "conditions": {
         "item": {
-          "items": [
-            "oak_sign",
-            "birch_sign",
-            "acacia_sign",
-            "jungle_sign",
-            "warped_sign",
-            "crimson_sign",
-            "spruce_sign",
-            "dark_oak_sign"
-          ]
+          "tag": "signs"
         },
         "location": {
           "block": {
@@ -26,16 +17,7 @@
       "trigger": "placed_block",
       "conditions": {
         "item": {
-          "items": [
-            "oak_sign",
-            "birch_sign",
-            "acacia_sign",
-            "jungle_sign",
-            "warped_sign",
-            "crimson_sign",
-            "spruce_sign",
-            "dark_oak_sign"
-          ],
+          "tag": "signs",
           "nbt": "{BlockEntityTag: {}}"
         },
         "location": {
