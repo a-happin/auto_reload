@@ -10,3 +10,4 @@
   scoreboard objectives add auto_reload.used.written_book used:written_book
 
 execute as @a store result score @s auto_reload.play_time run scoreboard players set @s auto_reload.total_time 0
+schedule clear auto_reload:reload
