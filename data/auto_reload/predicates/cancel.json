@@ -45,16 +45,6 @@
           }
         }
       }
-    },
-    {
-      "condition": "entity_scores",
-      "entity": "this",
-      "scores": {
-        "auto_reload.total_time": {
-          "min": 1,
-          "max": 10
-        }
-      }
     }
   ]
 }
