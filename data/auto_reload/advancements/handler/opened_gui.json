@@ -3,21 +3,26 @@
     "block": {
       "trigger": "item_used_on_block",
       "conditions": {
-        "location": {
-          "block": {
-            "blocks": [
-              "command_block",
-              "chain_command_block",
-              "repeating_command_block",
-              "jigsaw"
-            ]
+        "location": [
+          {
+            "condition": "location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "command_block",
+                  "chain_command_block",
+                  "repeating_command_block",
+                  "jigsaw"
+                ]
+              }
+            }
           }
-        },
+        ],
         "player": [
           {
-            "condition": "minecraft:inverted",
+            "condition": "inverted",
             "term": {
-              "condition": "minecraft:entity_scores",
+              "condition": "entity_scores",
               "entity": "this",
               "scores": {
                 "auto_reload.sneak_time": {
@@ -32,24 +37,32 @@
     "block_with_sneaking": {
       "trigger": "item_used_on_block",
       "conditions": {
-        "location": {
-          "block": {
-            "blocks": [
-              "command_block",
-              "chain_command_block",
-              "repeating_command_block",
-              "jigsaw"
-            ]
+        "location": [
+          {
+            "condition": "location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "command_block",
+                  "chain_command_block",
+                  "repeating_command_block",
+                  "jigsaw"
+                ]
+              }
+            }
+          },
+          {
+            "condition": "match_tool",
+            "predicate": {
+              "items": [
+                "air"
+              ]
+            }
           }
-        },
-        "item": {
-          "items": [
-            "air"
-          ]
-        },
+        ],
         "player": [
           {
-            "condition": "minecraft:entity_scores",
+            "condition": "entity_scores",
             "entity": "this",
             "scores": {
               "auto_reload.sneak_time": {

@@ -1,5 +1,5 @@
 {
-  "condition": "alternative",
+  "condition": "any_of",
   "terms": [
     {
       "condition": "entity_scores",
@@ -27,21 +27,6 @@
           "type": "player",
           "advancements": {
             "auto_reload:handler/opened_gui": true
-          }
-        }
-      }
-    },
-    {
-      "condition": "entity_properties",
-      "entity": "this",
-      "predicate": {
-        "type_specific": {
-          "type": "player",
-          "advancements": {
-            "auto_reload:handler/placed_empty_sign": {
-              "_": true,
-              "with_nbt": false
-            }
           }
         }
       }

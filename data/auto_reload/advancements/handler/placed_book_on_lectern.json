@@ -3,19 +3,27 @@
     "": {
       "trigger": "item_used_on_block",
       "conditions": {
-        "item": {
-          "items": [
-            "writable_book",
-            "written_book"
-          ]
-        },
-        "location": {
-          "block": {
-            "blocks": [
-              "lectern"
-            ]
+        "location": [
+          {
+            "condition": "location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "lectern"
+                ]
+              }
+            }
+          },
+          {
+            "condition": "match_tool",
+            "predicate": {
+              "items": [
+                "writable_book",
+                "written_book"
+              ]
+            }
           }
-        }
+        ]
       }
     }
   },
