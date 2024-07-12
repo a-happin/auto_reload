@@ -16,7 +16,7 @@ This datapack **must** be uninstalled before releasing your CTM Map(Custom Map).
 
 ## Requirement
 
-- Minecraft JE 1.20.1+
+- Minecraft JE 1.21+
 - **single player world** (does not work in multi server)
 
 ## Installation
