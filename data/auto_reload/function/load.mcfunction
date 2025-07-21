@@ -4,4 +4,4 @@
 
 schedule clear auto_reload:schedule_reload/1
 schedule clear auto_reload:schedule_reload/2
-schedule function auto_reload:wait_for_idle/ 10
+function auto_reload:wait_for_idle/
