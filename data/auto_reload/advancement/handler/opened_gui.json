@@ -12,7 +12,8 @@
                   "command_block",
                   "chain_command_block",
                   "repeating_command_block",
-                  "jigsaw"
+                  "jigsaw",
+                  "test_instance_block"
                 ]
               }
             }
